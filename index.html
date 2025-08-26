@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>DAFTAR KELUAR MASUK</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="kejang.css" />
+  
+</head>
+<body>
+  <h2>
+    <img src="https://i.postimg.cc/1zmbg12G/dark-dsb.png" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+    ABSENSI KELUAR MASUK STAF
+    <div style="margin-bottom: 10px;">
+    <button class="btn-denda" onclick="bukaHalamanDenda()">Denda</button>
+    <button class="btn-pengeluaran" onclick="bukaHalamanPengeluaran()">PORTOFOLIO</button>
+     <img src="https://i.postimg.cc/3wJYDs6k/lapor-pengaduan.png" 
+     alt="Slip Pengeluaran" 
+     style="cursor:pointer; height:40px;" 
+     onclick="bukaHalamanPengeluaran()">
+    
+  </div>
+
+  </h2>
+
+  <div id="digitalClock"></div>
+  <!-- Baris 2: Denda, Bukti Denda, Pengeluaran, Export -->
+
+  <!-- Baris 1: Nama, Kode Akses, Keluar, Masuk -->
+  <div style="margin-bottom: 10px;">
+    <label for="namaStaf">Nama STAF:</label>
+    <select id="namaStaf">
+      <option value="">Loading...</option>
+    </select>
+
+    <input type="password" id="kodeAkses" placeholder="Kode Akses">
+    <img src="https://i.postimg.cc/1zrdQ45T/keluarrr.jpg" 
+     alt="Keluar" 
+     style="cursor:pointer; margin-right:10px;" 
+     onclick="catatKeluar()">
+
+    <img src="https://i.postimg.cc/2594hfHy/masuk.png" 
+     alt="Masuk" 
+     style="cursor:pointer; margin-right:10px;" 
+     onclick="catatMasuk()">
+    
+  </div>
+
+
+  <!-- Daftar Keluar -->
+  <div id="daftarKeluar" class="keluar-container"></div>
+
+  <!-- Tabel Presensi -->
+  <table id="tabelPresensi">
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Tanggal Keluar</th>
+        <th>Jam Keluar</th>
+        <th>Jam Masuk</th>
+        <th>Durasi</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <!-- Baris 3: Tanggal, Kode Akses Admin, Bersihkan -->
+  <div style="margin-bottom: 20px;">
+    <label for="tanggalHapus">Tanggal:</label>
+    <input type="date" id="tanggalHapus">
+    <input type="password" id="kodeAksesHapus" placeholder="Kode Akses Admin">
+    <img src="https://i.postimg.cc/HkD2SH4h/hapus.jpg" 
+     alt="Bersihkan Tabel" 
+     style="cursor:pointer; height:40px;" 
+     onclick="bersihkanTabel()">
+
+    <img src="https://i.postimg.cc/BQY86Ctc/excel.png" 
+     alt="Export ke CSV" 
+     style="cursor:pointer; height:40px;" 
+     onclick="exportToCSV()">
+
+
+  </div>
+  <!-- Supabase & JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
