@@ -1,180 +1,29 @@
-/* === Gaya dasar halaman bonus === */
-body.JUAL {
+body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
+  margin: 20px;
 }
-
-/* === Navbar === */
-.navbar {
-  background-image: url('aset/ampar.jpeg');
-  padding: 10px 20px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+h2 {
+  text-align: center;
 }
-
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.logo-text {
-  font-size: 48px;
-  font-weight: bold;
-  background: linear-gradient(45deg, #ff6b6b, #ffe66d, #6bcB77);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  animation: zoomPulse 2s infinite alternate;
-  font-family: 'Comic Sans MS', cursive;
-}
-
-@keyframes zoomPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-}
-
-.profile-header {
-  display: flex;
-  align-items: center;
-}
-
-.profile-photo {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  margin-left: 10px;
-  object-fit: cover;
-}
-
-.profile-info {
-  margin-left: 10px;
-}
-
-/* === Navigasi utama === */
-.main-nav {
-  background-color: #40e70d;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-}
-
-.main-nav a {
-  color: rgb(8, 0, 0);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.main-nav a:hover {
-  text-decoration: underline;
-}
-
-/* === Main content area === */
-main.main-content {
-  padding: 20px;
-}
-
-/* === Tabel === */
 table {
-  background-color: #97e090e1;
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
-
 th, td {
-  border: 1px solid #080801;
-  padding: 10px;
-  color: rgb(24, 119, 243);
-  text-align: center;
-}
-
-
-th {
-  font-size: 26px;
-  color: rgb(243, 24, 24);
-  background-color: #e6b977fb;
-  font-weight: bold;
-}
-
-
-/* === Input Angka === */
-input[type="number"] {
-  width: 100%;
+  border: 1px solid #ddd;
   padding: 8px;
-  font-size: 14px;
-  box-sizing: border-box;
-}
-
-/* === Footer === */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* Wrapper untuk isi utama */
-.wrapper {
-  min-height: calc(100vh - 50px); /* 50px = tinggi footer */
-}
-
-/* Footer tetap di bawah */
-footer {
-  background-color: #4d4de491;
-  color: #ffffff;
   text-align: center;
-  padding: 2px;
-  font-size: 17px;
-  height: 50px;
 }
-
-/* === Bonus highlight saat > 500rb === */
-.highlight-max {
-  background-color: #f44336 !important;
-  color: white !important;
+th {
+  background-color: #cf9898;
+  color: white;
 }
-#clock {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;           /* warna putih agar kontras di navbar gelap */
-  background-color: rgba(0, 0, 0, 0.3); /* transparan gelap untuk latar */
-  padding: 5px 10px;
-  border-radius: 5px;
-  min-width: 180px;      /* supaya tidak terlalu sempit */
-  text-align: center;
-  user-select: none;     /* agar teks tidak bisa diseleksi */
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}.marquee {
+input {
   width: 100%;
-  overflow: hidden;
-  background: #fdfdfc;
-  color: #010007;
-  font-size: 28px;  /* harus pakai satuan px */
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 0px; /* jarak bawah supaya tidak nempel divisi */
   box-sizing: border-box;
-  font-family: 'Roboto', Arial, sans-serif;
+  padding: 4px;
 }
-
-.marquee span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 19s linear infinite;
-  white-space: nowrap;
-}
-
-/* Animasi scroll teks */
-@keyframes marquee {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+select {
+  width: auto;
 }
