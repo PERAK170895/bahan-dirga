@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header/Navbar -->
+    <header class="bg-orange-500 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <!-- Logo -->
+                    <a href="#" class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c6259599-a0d5-4520-95b7-e0ce42f04c9d.png" alt="Logo Shopee Clone" class="h-10">
+                    </a>
+                    
+                    <!-- Search Bar -->
+                    <div class="hidden md:flex flex-1 max-w-xl">
+                        <div class="relative w-full">
+                            <input type="text" placeholder="Cari produk..." class="w-full py-2 px-4 rounded-l-md text-gray-800 focus:outline-none">
+                            <button class="bg-orange-600 text-white py-2 px-6 rounded-r-md hover:bg-orange-700">
+                                <span class="hidden md:inline">Cari</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" id="logoutBtn" class="flex flex-col items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h6a2 2 0 012 2v1" />
+                    </svg>
+                    <span class="hidden md:inline">Logout</span>
+                </a>
+
+                <!-- Mobile Search -->
+                <div class="md:hidden mt-3">
+                    <div class="relative w-full">
+                        <input type="text" placeholder="Cari produk..." class="w-full py-2 px-4 rounded-md text-gray-800 focus:outline-none">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-6">
+        <!-- Hero Banner -->
+        <div class="mb-6">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3ae7de60-5b48-42a2-954a-4c9d3b9225d4.png" alt="Banner promosi Shopee" class="w-full rounded-lg shadow-md">
+        </div>
+        
+        <!-- Categories -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2 mb-8">
+            <!-- Tambahkan kategori sesuai HTML sebelumnya -->
+        </div>
+        
+        <!-- Flash Sale -->
+        <div class="bg-white rounded-lg shadow-md p-4 mb-8">
+            <!-- Konten Flash Sale sesuai HTML sebelumnya -->
+        </div>
+        
+        <!-- Recommended Products -->
+        <div class="bg-white rounded-lg shadow-md p-4 mb-8">
+            <!-- Konten Rekomendasi Produk sesuai HTML sebelumnya -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <!-- Konten footer sesuai HTML sebelumnya -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

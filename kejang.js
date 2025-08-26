@@ -79,7 +79,7 @@ function toggleFold() {
   const formattedTime = now.toLocaleTimeString('id-ID', timeOptions);
 
   // Gabungkan dengan emoji kalender di depan
-  document.getElementById('clock').textContent = `📅 ${formattedDate}, ${formattedTime}`;
+  document.getElementById('clock').textContent = `⏰ ${formattedDate}, ${formattedTime}`;
 }
 
 // Update setiap detik

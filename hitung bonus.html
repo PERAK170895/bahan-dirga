@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+  <link rel="stylesheet" href="bonus.css" />
+  <title>HITUNG BONUS</title>
+</head>
+<body class="JUAL">
+<div class="wrapper">
+
+<!-- ✅ Header / Navbar -->
+<header>
+  <div class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-text">DSP 2025 v1.0</span>
+    </a>
+
+    <div class="profile-header">
+      <div id="clock">Memuat waktu...</div>
+      <img src="aset/ampar.jpeg" alt="Profile" class="profile-photo">
+      <div class="profile-info">
+        <h1>Hallo 🔔</h1>
+        <div class="info">Memuat...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigasi utama -->
+  <nav class="main-nav">
+    <a href="#">GROUPS</a>
+    <a href="#">PROFILE</a>
+    <a href="">DATA BASE</a>
+    <a href="Beranda.html">LAPORAN KEUANGAN</a>
+    <a href="#" id="auth-button">SIGN IN</a>
+  </nav>
+</header>
+
+<!-- ✅ Main Content -->
+<main class="main-content">
+<table>
+  
+<thead>
+  <tr>
+    <th colspan="6">TABEL HITUNG BONUS</th>
+  </tr>
+    <tr>
+      <th colspan="3" >JENIS BONUS</th>
+      <th><img src="aset/free.jpeg" alt="TELKOMSEL" style="width:400px;"></th>
+      <th><img src="aset/buy.jpeg" alt="XL" style="width:400px;"></th>
+     </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">HASIL FREE SPIN</td>
+      <td><input id="fmurni" type="number"></td>
+      <td><input id="fbuy" type="number"></td>
+    </tr>
+    <tr>
+      <td colspan="4">NOMINAL PEMBELIAN FREE SPIN</td>
+      <td><input id="pfbuy" type="number"></td>
+    </tr>
+
+
+  </tbody>
+</table>
+<br>
+
+<table>
+  <tr>
+    <th colspan="8">TOTAL BONUS DI BERIKAN</th>
+  </tr>
+  <tr>
+    <td colspan="4">BONUS FREE SPIN</td>
+    <td colspan="4">BONUS BUY SPIN</td>
+    
+  </tr>  
+  <tr>
+    <td colspan="2" id="tfmurni"></td>
+    <td colspan="2" id="bc"></td>
+    <td colspan="2" id="tbf"></td>
+    <td colspan="2" id="bff"></td>
+    </tr>
+  </table>
+</main>
+</div>
+
+<footer>
+  <p>&copy; 2025 DIRGASPSzay | All Rights Reserved</p>
+</footer>
+
+
+<!-- ✅ Script -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="bonus.js"></script>
+</body>
+</html>

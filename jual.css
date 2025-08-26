@@ -1,0 +1,179 @@
+/* RESET DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('aset/ampar.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #84c251;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #f3e2e2;
+}
+
+/* NAVBAR & HEADER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0846d4;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-text {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6b6b, #ffe66d, #6bcB77);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: zoomPulse 2s infinite alternate;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+@keyframes zoomPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* PROFILE HEADER */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.profile-info h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.info {
+  color: #fff9f9;
+  background-color: #42813ce1;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* NAVIGASI UTAMA */
+.main-nav {
+  display: flex;
+  gap: 12px;
+  padding: 10px 20px;
+}
+
+.main-nav a {
+  padding: 10px 20px;
+  color: rgb(0, 2, 3);
+  background-color: #07f53a;
+  text-decoration: none;
+  font-size: 22px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: #e66037;
+  color: #56bd26;
+}
+
+/* MAIN CONTENT */
+main.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* TABEL */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: rgb(2, 2, 2);
+  background-color: rgba(83, 211, 218, 0.863);
+}
+
+th, td {
+  font-size: 18px;
+  padding: 8px;
+  border: 2px solid #3327bb;
+  text-align: center;
+}
+
+th {
+  color: rgb(241, 226, 15);
+  font-size: 26px;
+  background-color: rgba(40, 26, 241, 0.705);
+  border: 2px solid #040218;
+}
+
+
+
+/* BUTTON */
+button {
+  padding: 8px 16px;
+  background-color: #eb4040;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #80c530;
+}
+
+/* FOOTER */
+footer {
+  background-color: #4d4de491;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 17px;
+}
+table input[type="number"] {
+  width: 100%;
+  font-weight: bold;
+  height: 40px; /* tinggi kotak */
+  font-size: 18px; /* ukuran teks */
+  padding: 5px 10px;
+  box-sizing: border-box; /* supaya padding masuk hitungan width */
+}
+td {
+  min-width: 120px; /* atau sesuaikan */
+}
+
+body.JUAL {
+    background-color: lightblue;
+    color: navy;
+}

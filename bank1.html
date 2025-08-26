@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+  <link rel="stylesheet" href="bonus.css" />
+  <title>BANKDSp</title>
+</head>
+<body class="JUAL">
+<div class="wrapper">
+
+  <!-- ✅ Header / Navbar -->
+  <header>
+    <div class="navbar">
+      <a href="#" class="logo">
+        <span class="logo-text">DSP 2025 v1.0</span>
+      </a>
+
+      <div class="profile-header">
+        <img src="aset/ampar.jpeg" alt="Profile" class="profile-photo">
+        <div class="profile-info">
+          <h1>Hallo 🔔</h1>
+          <div class="info">Memuat...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigasi utama -->
+    <nav class="main-nav">
+      <a href="#">GROUPS</a>
+      <a href="#">PROFILE </a>
+      <a href="#">HITUNG BONUS</a>
+      <a href="Beranda.html">LAPORAN KEUANGAN </a>
+      <a href="dataku.html">DATA BASE </a>
+      <a href="#" id="auth-button">SIGN IN </a>
+    </nav>
+
+    <!-- ✅ Marquee + Jam -->
+    <div class="marquee-container">
+      <div id="clock">Memuat waktu...</div>
+      <div class="marquee">
+        <span>🔔 Selamat datang di DSP 2025 _ v1.0 | Tetap Semangat dan Produktif! 🔔</span>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ✅ Main Content -->
+  <main class="main-content">
+    <div class="layout-3tabel">
+      
+      <!-- Kolom kiri (tabel input) -->
+      <div class="kolom-kiri">
+        <table>
+          <tr>
+            <th colspan="8">DATA account</th>
+          </tr>
+          <tr>
+            <td colspan="4">NAMA account</td>
+            <td colspan="4">NOMOR account</td>
+          </tr>
+          <tr>
+            <td colspan="4" id="tfmurni"></td>
+            <td colspan="2"><input id="bff" type="number"></td>
+            <td id="cari" onclick="cariData()">Search 🔎</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr class="bonus-row">
+            <th colspan="3"></th>
+            <th>Nominal ANGSURAN</th>
+            <th>ADM</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td colspan="3">Dalam nominal Rupiah (Rp)</td>
+              <td><input id="fmurni" type="number"></td>
+              <td id="fbuy">0</td>
+            </tr>
+            <tr>
+              <td colspan="4">Total credit account</td>
+              <td id="pfbuy">0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Tombol submit -->
+        <div class="submit-container">
+          <button class="btn">SUBMIT</button>
+        </div>
+      </div>
+
+      <!-- Kolom kanan (detail nasabah) -->
+      <div class="kolom-kanan">
+        <table>
+          <tr>
+            <th colspan="2">Detail Nasabah</th>
+          </tr>
+          <tr>
+            <td>No Account</td>
+            <td id="detail-no">-</td>
+          </tr>
+          <tr>
+            <td>Nama</td>
+            <td id="detail-nama">-</td>
+          </tr>
+          <tr>
+            <td>TTL</td>
+            <td id="detail-ttl">-</td>
+          </tr>
+          <tr>
+            <td>Ibu Kandung</td>
+            <td id="detail-ibu">-</td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td id="detail-alamat">-</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td id="detail-email">-</td>
+          </tr>
+          <tr>
+            <td>No HP</td>
+            <td id="detail-hp">-</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </main>
+
+</div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="bonus.js"></script>
